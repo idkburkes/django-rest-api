@@ -13,7 +13,7 @@ class ThingTests(TestCase):
         test_thing = Pizza.objects.create(name='Meat Lover', owner=testuser1,description='Loaded with sausage, pepperoni, and ham.')
         test_thing.save()
 
-    def test_things_model(self):
+    def test_pizza_model(self):
         pizza = Pizza.objects.get(id=1)
         actual_owner = str(pizza.owner)
         actual_name = str(pizza.name)
